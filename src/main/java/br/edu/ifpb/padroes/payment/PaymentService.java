@@ -16,12 +16,6 @@ public class PaymentService {
         realEstatePayment.setNext(propertyPayment);
 
         governmentTaxesPayment.handle(sale);
-
-        // TODO - implementar Chain of Responsibility para que ordem dos métodos de pagamento seja dinâmica (definida em tempo de execução)
-//        governmentTaxesPayment.process(sale);
-//        realEstatePayment.process(sale);
-//        propertyPayment.process(sale);
-
     }
 
 }
